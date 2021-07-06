@@ -44,8 +44,8 @@ def estado_contenedor():
 def salir():
 
     if msvcrt.kbhit():
-        key_stroke = msvcrt.getch()
-        if key_stroke==chr(27).encode():
+        tecla_presionada = msvcrt.getch()
+        if tecla_presionada == chr(27).encode():
             print ("Esc presionado, el programa se detuvo.")
             sys.exit()
 
